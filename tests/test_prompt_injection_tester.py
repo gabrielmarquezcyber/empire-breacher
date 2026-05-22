@@ -39,6 +39,16 @@ class PromptInjectionAnalyzerTests(unittest.TestCase):
             "PASS - NO HIGH-RISK INJECTION PATTERN DETECTED",
         )
 
+    def test_ambiguous_wallet_fixture_requires_review(self):
+        fixture = REPO_ROOT / "tests" / "fixtures" / "agent_wallet_ambiguous_001.txt"
+
+        result = prompt_injection_tester.analyze_fixture(fixture)
+
+        self.assertEqual(
+            result["classification"],
+            "REVIEW - POTENTIAL PROMPT INJECTION",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
