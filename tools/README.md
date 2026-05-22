@@ -80,3 +80,11 @@ agent_wallet_benign_001.txt -> PASS
 ## Limitation
 
 This is a deterministic fixture scanner. It does not prove how a specific LLM or production agent will behave. It identifies high-risk fixture content for controlled agent-behavior testing.
+
+## Phase 1 Validation Set
+
+```text
+agent_wallet_benign_001.txt -> PASS
+agent_wallet_ambiguous_001.txt -> REVIEW
+agent_wallet_injection_001.txt -> FAIL
+```
