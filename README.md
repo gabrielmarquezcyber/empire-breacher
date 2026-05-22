@@ -20,3 +20,7 @@ This repo contains:
 
 Initial focus: prompt injection and tool misuse leading to unauthorized blockchain transactions.
 
+
+## Documentation
+
+- [Lab Notes](docs/lab-notes/README.md) - short research notes, threat models, and test plans for AI-agent exploitation, wallet-enabled agents, prompt injection, and Web3 security.
