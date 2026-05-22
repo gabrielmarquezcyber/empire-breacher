@@ -5,3 +5,4 @@ This folder contains short research notes, threat models, and test plans related
 ## Notes
 
 - [Agent Wallet Threat Model 001](agent-wallet-threat-model-001.md)
+- [Agent Wallet Injection Result 001](agent-wallet-injection-result-001.md)
