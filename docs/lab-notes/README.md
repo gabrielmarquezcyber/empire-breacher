@@ -9,3 +9,7 @@ This folder contains short research notes, threat models, and test plans related
 - [Prompt Injection Analyzer Validation Summary 001](prompt-injection-analyzer-validation-summary-001.md)
 - [PASS / REVIEW / FAIL Examples 001](pass-review-fail-examples-001.md)
 - [Toy Wallet Agent Behavior Report 001](toy-wallet-agent-behavior-001.md)
+
+## Related Policy
+
+- [Wallet Agent Safety Policy](../../policies/wallet-agent-safety-policy.md)

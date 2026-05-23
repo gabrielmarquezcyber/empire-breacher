@@ -24,3 +24,10 @@ Initial focus: prompt injection and tool misuse leading to unauthorized blockcha
 ## Documentation
 
 - [Lab Notes](docs/lab-notes/README.md) - short research notes, threat models, and test plans for AI-agent exploitation, wallet-enabled agents, prompt injection, and Web3 security.
+
+## Current Research Artifacts
+
+- [Lab Notes](docs/lab-notes/README.md)
+- [Tool Usage](tools/README.md)
+- [Toy Wallet Agent](agents/README.md)
+- [Wallet Agent Safety Policy](policies/wallet-agent-safety-policy.md)

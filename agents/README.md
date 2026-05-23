@@ -191,3 +191,7 @@ It defines the expected safety policy before adding an LLM or simulated transact
 
 That is deliberate: the safe behavior baseline should be explicit before model variability is introduced.
 
+
+## Related Policy
+
+- [Wallet Agent Safety Policy](../policies/wallet-agent-safety-policy.md)
