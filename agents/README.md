@@ -177,9 +177,9 @@ Important fields in the decision output:
 | `recommended_action` | Safe behavior selected by the toy agent. |
 | `safety_reason` | Plain-English reason for the decision. |
 
-## Interview Explanation
+## Security Interpretation
 
-Use this explanation:
+This section summarizes the security rationale for the simulator:
 
 > Phase 2 adds a deterministic toy wallet-agent simulator. It imports the Phase 1 prompt-injection analyzer, classifies untrusted external content, and maps the result to safe behavior. Malicious content causes refusal, ambiguous wallet-related content triggers human review, and benign content can be summarized safely. In all cases, wallet action remains disallowed because external content cannot authorize wallet behavior.
 
@@ -190,3 +190,4 @@ This simulator does not test real model behavior.
 It defines the expected safety policy before adding an LLM or simulated transaction layer.
 
 That is deliberate: the safe behavior baseline should be explicit before model variability is introduced.
+
