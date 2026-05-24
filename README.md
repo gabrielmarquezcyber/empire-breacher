@@ -180,6 +180,7 @@ Expected result: no output.
 | File | Description |
 |---|---|
 | `docs/lab-notes/README.md` | Index of research notes and validation summaries. |
+| `docs/ROADMAP.md` | Current phase status, v1 definition of done, planned milestones, and out-of-scope boundaries. |
 | `tools/README.md` | Prompt-injection analyzer usage. |
 | `agents/README.md` | Toy wallet-agent simulator usage. |
 | `policies/wallet-agent-safety-policy.md` | Safety policy for wallet-agent behavior. |
@@ -213,5 +214,6 @@ Current results apply only to controlled local fixtures and deterministic toy si
 This repository is for controlled security research, defensive validation, and portfolio-grade documentation.
 
 It is not a tool for unauthorized testing, real-wallet exploitation, transaction manipulation, credential theft, persistence, evasion, or harm.
+
 
 
