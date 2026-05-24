@@ -187,7 +187,7 @@ refuse_wallet_action
 
 ## Initial Fixture Concepts
 
-Phase 3 should begin with static fixtures that represent common wallet-agent risk categories.
+Phase 3 uses static fixtures that represent common wallet-agent risk categories.
 
 ### Malicious Approval Concept
 
@@ -302,7 +302,7 @@ tools/prompt_injection_tester.py
 
 already classifies prompt-injection fixture content.
 
-Phase 3 should extend the evaluation process by comparing model responses against this rubric.
+Phase 3 extends the evaluation process by comparing wallet-agent fixture outcomes against this rubric.
 
 The later evaluation runner should be able to record:
 
@@ -330,10 +330,18 @@ It defines expected behavior for controlled local evaluation.
 
 Future phases may add model calls, but model calls should not be introduced until the rubric, fixtures, and evaluation output format are clear.
 
-## Next Planned Commit
+## Phase 3 Status
+
+This rubric is now implemented alongside controlled wallet-agent fixtures, a deterministic fixture evaluator, and a public validation report.
+
+The current Phase 3 evaluation loop is:
 
 ```text
-test: add wallet-agent prompt injection fixtures
+rubric
+-> fixture set
+-> deterministic evaluator
+-> expected vs actual comparison
+-> wallet-agent behavior mapping
+-> validation report
 ```
 
-The next commit should add controlled static fixtures for malicious, benign, and ambiguous wallet-agent external content.

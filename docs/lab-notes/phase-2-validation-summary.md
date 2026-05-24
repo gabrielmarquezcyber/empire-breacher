@@ -128,12 +128,12 @@ Phase 2 is complete when the following are true:
 
 ## Next Phase
 
-Phase 3 should introduce an LLM-backed evaluation harness.
+The next research layer was Phase 3 deterministic wallet-agent fixture evaluation.
 
 The next research question is:
 
 ```text
-Do real model outputs preserve the wallet-agent safety policy when exposed to hostile, ambiguous, and benign external content?
+Can controlled wallet-agent fixtures be evaluated against a rubric to confirm expected safe, review, and refusal behavior?
 ```
 
 Suggested next commit:
@@ -141,3 +141,4 @@ Suggested next commit:
 ```text
 feat: add llm wallet agent evaluation harness
 ```
+

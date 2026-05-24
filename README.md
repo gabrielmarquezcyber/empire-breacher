@@ -207,21 +207,11 @@ Empire Breacher currently does not:
 
 Current results apply only to controlled local fixtures and deterministic toy simulations.
 
-## Planned Next Phase
-
-Phase 3 should introduce an LLM-backed evaluation harness.
-
-The next research question is:
-
-```text
-Do real model outputs preserve the wallet-agent safety policy when exposed to hostile, ambiguous, and benign external content?
-```
-
-The next phase should define an evaluation rubric before introducing model calls.
 
 ## Safety Boundary
 
 This repository is for controlled security research, defensive validation, and portfolio-grade documentation.
 
 It is not a tool for unauthorized testing, real-wallet exploitation, transaction manipulation, credential theft, persistence, evasion, or harm.
+
 
