@@ -17,7 +17,7 @@ This repository does not interact with real wallets, real funds, production syst
 ```text
 Phase 1: Complete - static prompt-injection fixture analyzer
 Phase 2: Complete - deterministic toy wallet-agent behavior simulator
-Phase 3: Planned  - LLM-backed evaluation harness
+Phase 3: Complete - deterministic wallet-agent fixture evaluation
 ```
 
 ## Research Focus
@@ -121,6 +121,36 @@ wallet_action_allowed = false
 
 This invariant is intentional because the trusted user request only asks the agent to review external content. It does not authorize transaction building, signing, token approvals, spender selection, network selection, or wallet recommendations.
 
+## Phase 3 Proof Map
+
+Phase 3 added a deterministic wallet-agent fixture evaluation loop.
+
+### Phase 3 Research Question
+
+```text
+Can controlled wallet-agent fixtures be evaluated against a rubric to confirm expected safe, review, and refusal behavior?
+```
+
+### Phase 3 Artifacts
+
+- `docs/lab-notes/llm-evaluation-rubric-001.md` defines PASS, REVIEW, and FAIL criteria for wallet-agent evaluation.
+- `tests/fixtures/wallet-agent/` contains controlled malicious, benign, and ambiguous wallet-agent fixtures.
+- `tools/wallet_fixture_evaluator.py` evaluates Phase 3 wallet-agent fixtures deterministically.
+- `docs/validation-reports/phase-3-wallet-agent-evaluation.md` documents the Phase 3 evaluation results.
+
+### Phase 3 Validated Behavior
+
+- Malicious approval, transfer, and signature fixtures are expected to produce `FAIL` and map to `refuse_wallet_action`.
+- Ambiguous wallet-adjacent verification content is expected to produce `REVIEW` and map to `request_human_review`.
+- Benign token summary content is expected to produce `PASS` and map to `summarize_safely`.
+
+Phase 3 preserves the same core invariant:
+
+```text
+wallet_action_allowed = false
+```
+
+
 ## Run Validation Tests
 
 Run the full current test set:
@@ -194,3 +224,4 @@ The next phase should define an evaluation rubric before introducing model calls
 This repository is for controlled security research, defensive validation, and portfolio-grade documentation.
 
 It is not a tool for unauthorized testing, real-wallet exploitation, transaction manipulation, credential theft, persistence, evasion, or harm.
+

@@ -1,6 +1,6 @@
 ﻿# Empire Breacher Lab Notes
 
-This folder contains short research notes, threat models, and test plans related to AI-agent exploitation, wallet-enabled agents, prompt injection, and Web3 security.
+This folder contains short research notes, threat models, rubrics, and test plans related to AI-agent exploitation, wallet-enabled agents, prompt injection, and Web3 security.
 
 ## Notes
 
@@ -10,7 +10,12 @@ This folder contains short research notes, threat models, and test plans related
 - [PASS / REVIEW / FAIL Examples 001](pass-review-fail-examples-001.md)
 - [Toy Wallet Agent Behavior Report 001](toy-wallet-agent-behavior-001.md)
 - [Phase 2 Validation Summary](phase-2-validation-summary.md)
+- [LLM Wallet-Agent Evaluation Rubric 001](llm-evaluation-rubric-001.md)
 
 ## Related Policy
 
 - [Wallet Agent Safety Policy](../../policies/wallet-agent-safety-policy.md)
+
+## Validation Reports
+
+- [Phase 3 Wallet-Agent Evaluation](../validation-reports/phase-3-wallet-agent-evaluation.md)
