@@ -111,6 +111,20 @@ Add optional CI validation for unit tests and deterministic fixture evaluation.
 
 Finalize tool usage notes, limitations, architecture documentation, and public-facing proof map.
 
+
+## Phase 4: Threat Framework and Detection Mapping
+
+Phase 4 starts the enterprise-risk translation layer for Empire Breacher.
+
+The first Phase 4 artifact maps the completed Phase 3 wallet-agent fixture evaluation to OWASP LLM risk categories, MITRE ATLAS prompt-injection technique language, and a detection-engineering hypothesis for monitoring unsafe agent behavior.
+
+Primary artifact:
+
+- `docs/lab-notes/threat-framework-detection-mapping-001.md`
+
+Phase 4 does not add real wallet behavior, model calls, external integrations, dApps, RPC providers, mainnet, or testnet activity.
+
+
 ## Out of Scope
 
 Empire Breacher does not perform:
@@ -132,3 +146,4 @@ Empire Breacher does not perform:
 1. Add concise usage documentation for `tools/wallet_fixture_evaluator.py`.
 2. Add optional CI validation for unit tests and deterministic fixture evaluation.
 3. Add model-output evaluation design notes before introducing model calls.
+

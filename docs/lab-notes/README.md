@@ -11,6 +11,7 @@ This folder contains short research notes, threat models, rubrics, and test plan
 - [Toy Wallet Agent Behavior Report 001](toy-wallet-agent-behavior-001.md)
 - [Phase 2 Validation Summary](phase-2-validation-summary.md)
 - [LLM Wallet-Agent Evaluation Rubric 001](llm-evaluation-rubric-001.md)
+- [Threat Framework and Detection Mapping 001](threat-framework-detection-mapping-001.md)
 
 ## Related Policy
 
@@ -19,3 +20,4 @@ This folder contains short research notes, threat models, rubrics, and test plan
 ## Validation Reports
 
 - [Phase 3 Wallet-Agent Evaluation](../validation-reports/phase-3-wallet-agent-evaluation.md)
+
