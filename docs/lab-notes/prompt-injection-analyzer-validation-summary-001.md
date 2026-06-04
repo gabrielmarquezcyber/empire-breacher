@@ -93,8 +93,9 @@ The next research question is:
 Can a wallet-enabled agent preserve authority boundaries when hostile external content tries to influence wallet behavior?
 ```
 
-Suggested first Phase 2 commit:
+Phase 2 follow-on commit:
 
 ```text
 feat: add toy wallet agent simulator
 ```
+

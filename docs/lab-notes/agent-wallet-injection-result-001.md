@@ -97,10 +97,11 @@ Purpose:
 
 `Verify that the analyzer can distinguish hostile wallet instructions from normal wallet-safety content.`
 
-Suggested next fixture:
+Follow-on fixture:
 
 `tests/fixtures/agent_wallet_benign_001.txt`
 
-Suggested next result:
+Follow-on validation result:
 
 `results/prompt-injection/agent_wallet_benign_001_result.md`
+

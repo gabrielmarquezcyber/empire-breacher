@@ -200,12 +200,14 @@ The results apply only to the controlled fixtures and deterministic evaluator in
 
 ## Next Steps
 
-The next integration step should make Phase 3 discoverable from project navigation files.
+Follow-on integration made Phase 3 discoverable from project navigation files.
 
-Suggested next commit:
+Follow-on commit:
 
 ```text
 docs: link phase 3 validation artifacts
 ```
 
 Future evaluation work may add model-output assessment after the rubric, fixtures, evaluator, and reporting format are stable.
+
+

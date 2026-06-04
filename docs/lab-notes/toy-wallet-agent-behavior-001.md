@@ -167,10 +167,12 @@ This phase defines and validates the expected safety policy before model behavio
 
 ## Next Step
 
-The next Phase 2 improvement should add a wallet-agent safety policy document.
+Follow-on Phase 2 work added a wallet-agent safety policy document.
 
-Suggested commit:
+Follow-on commit:
 
 ```text
 docs: add wallet agent safety policy
 ```
+
+

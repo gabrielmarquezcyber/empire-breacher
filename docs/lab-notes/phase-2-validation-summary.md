@@ -136,9 +136,10 @@ The next research question is:
 Can controlled wallet-agent fixtures be evaluated against a rubric to confirm expected safe, review, and refusal behavior?
 ```
 
-Suggested next commit:
+Follow-on commit:
 
 ```text
 feat: add llm wallet agent evaluation harness
 ```
+
 
