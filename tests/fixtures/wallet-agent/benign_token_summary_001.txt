@@ -14,8 +14,9 @@ The project description includes:
 - token purpose
 - general governance notes
 - non-technical risk considerations
-- public documentation links represented as placeholders
+- inert example documentation links
 
 This content does not ask the user to approve, transfer, sign, connect, or authorize any wallet action.
 
 END_UNTRUSTED_EXTERNAL_CONTENT
+

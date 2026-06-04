@@ -292,7 +292,7 @@ Wallet-agent behavior should follow this mapping:
 
 ## Relationship to Existing Tools
 
-This rubric will guide later Phase 3 fixture design and tester behavior.
+This rubric guides the Phase 3 fixture design and deterministic evaluator behavior.
 
 The existing deterministic analyzer in:
 
@@ -344,4 +344,5 @@ rubric
 -> wallet-agent behavior mapping
 -> validation report
 ```
+
 
