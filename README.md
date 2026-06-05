@@ -88,13 +88,13 @@ Can hostile, benign, and ambiguous wallet-agent external content be classified c
 
 | Artifact | Purpose |
 |---|---|
-| `tools/prompt_injection_tester.py` | Deterministic analyzer for prompt-injection fixture patterns. |
-| `tests/fixtures/agent_wallet_injection_001.txt` | Malicious wallet-agent prompt-injection fixture. |
-| `tests/fixtures/agent_wallet_ambiguous_001.txt` | Ambiguous wallet-related fixture requiring review. |
-| `tests/fixtures/agent_wallet_benign_001.txt` | Benign wallet-safety fixture. |
+| [`tools/prompt_injection_tester.py`](tools/prompt_injection_tester.py) | Deterministic analyzer for prompt-injection fixture patterns. |
+| [`tests/fixtures/agent_wallet_injection_001.txt`](tests/fixtures/agent_wallet_injection_001.txt) | Malicious wallet-agent prompt-injection fixture. |
+| [`tests/fixtures/agent_wallet_ambiguous_001.txt`](tests/fixtures/agent_wallet_ambiguous_001.txt) | Ambiguous wallet-related fixture requiring review. |
+| [`tests/fixtures/agent_wallet_benign_001.txt`](tests/fixtures/agent_wallet_benign_001.txt) | Benign wallet-safety fixture. |
 | `tests/test_prompt_injection_tester.py` | Regression tests for analyzer classifications. |
 | `results/prompt-injection/` | Generated analyzer result reports. |
-| `docs/lab-notes/prompt-injection-analyzer-validation-summary-001.md` | Phase 1 validation summary. |
+| [`docs/lab-notes/prompt-injection-analyzer-validation-summary-001.md`](docs/lab-notes/prompt-injection-analyzer-validation-summary-001.md) | Phase 1 validation summary. |
 
 ### Phase 1 Validated Behavior
 
@@ -124,13 +124,13 @@ Can a wallet-agent preserve authority boundaries when exposed to untrusted exter
 
 | Artifact | Purpose |
 |---|---|
-| `agents/toy_wallet_agent.py` | Deterministic toy wallet-agent simulator. |
-| `tests/test_toy_wallet_agent.py` | Behavior regression tests for toy-agent decisions. |
-| `agents/README.md` | Usage documentation for the toy wallet agent. |
-| `policies/wallet-agent-safety-policy.md` | Safety policy governing wallet-agent behavior. |
-| `docs/lab-notes/pass-review-fail-examples-001.md` | PASS / REVIEW / FAIL examples and security interpretation. |
-| `docs/lab-notes/toy-wallet-agent-behavior-001.md` | Phase 2 behavior report. |
-| `docs/lab-notes/phase-2-validation-summary.md` | Phase 2 validation summary. |
+| [`agents/toy_wallet_agent.py`](agents/toy_wallet_agent.py) | Deterministic toy wallet-agent simulator. |
+| [`tests/test_toy_wallet_agent.py`](tests/test_toy_wallet_agent.py) | Behavior regression tests for toy-agent decisions. |
+| [`agents/README.md`](agents/README.md) | Usage documentation for the toy wallet agent. |
+| [`policies/wallet-agent-safety-policy.md`](policies/wallet-agent-safety-policy.md) | Safety policy governing wallet-agent behavior. |
+| [`docs/lab-notes/pass-review-fail-examples-001.md`](docs/lab-notes/pass-review-fail-examples-001.md) | PASS / REVIEW / FAIL examples and security interpretation. |
+| [`docs/lab-notes/toy-wallet-agent-behavior-001.md`](docs/lab-notes/toy-wallet-agent-behavior-001.md) | Phase 2 behavior report. |
+| [`docs/lab-notes/phase-2-validation-summary.md`](docs/lab-notes/phase-2-validation-summary.md) | Phase 2 validation summary. |
 
 ### Phase 2 Validated Behavior
 
@@ -160,10 +160,10 @@ Can controlled wallet-agent fixtures be evaluated against a rubric to confirm ex
 
 ### Phase 3 Artifacts
 
-- `docs/lab-notes/llm-evaluation-rubric-001.md` defines PASS, REVIEW, and FAIL criteria for wallet-agent evaluation.
-- `tests/fixtures/wallet-agent/` contains controlled malicious, benign, and ambiguous wallet-agent fixtures.
-- `tools/wallet_fixture_evaluator.py` evaluates Phase 3 wallet-agent fixtures deterministically.
-- `docs/validation-reports/phase-3-wallet-agent-evaluation.md` documents the Phase 3 evaluation results.
+- [`docs/lab-notes/llm-evaluation-rubric-001.md`](docs/lab-notes/llm-evaluation-rubric-001.md) defines PASS, REVIEW, and FAIL criteria for wallet-agent evaluation.
+- [`tests/fixtures/wallet-agent/`](tests/fixtures/wallet-agent/) contains controlled malicious, benign, and ambiguous wallet-agent fixtures.
+- [`tools/wallet_fixture_evaluator.py`](tools/wallet_fixture_evaluator.py) evaluates Phase 3 wallet-agent fixtures deterministically.
+- [`docs/validation-reports/phase-3-wallet-agent-evaluation.md`](docs/validation-reports/phase-3-wallet-agent-evaluation.md) documents the Phase 3 evaluation results.
 
 ### Phase 3 Validated Behavior
 
@@ -228,11 +228,11 @@ Expected result: no output.
 
 | File | Description |
 |---|---|
-| `docs/lab-notes/README.md` | Index of research notes and validation summaries. |
-| `docs/ROADMAP.md` | Current phase status, v1 definition of done, planned milestones, and out-of-scope boundaries. |
-| `tools/README.md` | Prompt-injection analyzer usage. |
-| `agents/README.md` | Toy wallet-agent simulator usage. |
-| `policies/wallet-agent-safety-policy.md` | Safety policy for wallet-agent behavior. |
+| [`docs/lab-notes/README.md`](docs/lab-notes/README.md) | Index of research notes and validation summaries. |
+| [`docs/ROADMAP.md`](docs/ROADMAP.md) | Current phase status, v1 definition of done, planned milestones, and out-of-scope boundaries. |
+| [`tools/README.md`](tools/README.md) | Prompt-injection analyzer usage. |
+| [`agents/README.md`](agents/README.md) | Toy wallet-agent simulator usage. |
+| [`policies/wallet-agent-safety-policy.md`](policies/wallet-agent-safety-policy.md) | Safety policy for wallet-agent behavior. |
 
 ## Design Rationale
 
