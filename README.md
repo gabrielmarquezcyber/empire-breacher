@@ -1,4 +1,4 @@
-﻿# Empire Breacher
+# Empire Breacher
 
 Empire Breacher is a controlled AI/Web3 security research harness for studying wallet-agent prompt-injection risk, authority-boundary failures, and unsafe wallet behavior in lab conditions.
 
@@ -12,12 +12,39 @@ All testing is performed with local fixtures, deterministic tools, toy simulator
 
 This repository does not interact with real wallets, real funds, production systems, mainnet, testnet, dApps, browser extensions, RPC providers, or unauthorized targets.
 
+## Reviewer Proof Map
+
+This repository is designed to be reviewed quickly. Start here:
+
+| Proof Area | What It Shows | Start Here |
+|---|---|---|
+| Safety Boundary | External content can be analyzed, but it cannot authorize wallet behavior. | [Wallet-agent safety policy](policies/wallet-agent-safety-policy.md), [Phase 2 validation summary](docs/lab-notes/phase-2-validation-summary.md) |
+| Prompt-Injection Detection | Hostile, benign, and ambiguous wallet-agent content can be classified with deterministic fixture analysis. | [Prompt-injection tester](tools/prompt_injection_tester.py), [Phase 1 validation summary](docs/lab-notes/prompt-injection-analyzer-validation-summary-001.md) |
+| Wallet-Agent Behavior | PASS / REVIEW / FAIL classifications map to safe wallet-agent behavior. | [Toy wallet agent](agents/toy_wallet_agent.py), [PASS / REVIEW / FAIL examples](docs/lab-notes/pass-review-fail-examples-001.md) |
+| Fixture Evaluation | Controlled wallet-agent fixtures are evaluated against expected safe, review, and refusal outcomes. | [Wallet fixture evaluator](tools/wallet_fixture_evaluator.py), [Phase 3 validation report](docs/validation-reports/phase-3-wallet-agent-evaluation.md) |
+| Threat Framework Mapping | Wallet-agent risks are mapped to OWASP LLM Top 10, MITRE ATLAS concepts, and detection ideas. | [Threat framework and detection mapping](docs/lab-notes/threat-framework-detection-mapping-001.md) |
+| Project Roadmap | The repo has a v1 definition of done, milestones, and out-of-scope boundaries. | [Roadmap](docs/ROADMAP.md) |
+
+## What This Proves
+
+Empire Breacher demonstrates practical security reasoning for AI-assisted wallet workflows:
+
+- Untrusted external content is treated as data, not authority.
+- Wallet behavior is constrained by explicit safety policy.
+- Malicious, ambiguous, and benign fixtures are separated into PASS, REVIEW, and FAIL outcomes.
+- Unsafe wallet-related content maps to refusal behavior.
+- Ambiguous wallet-adjacent content maps to human review.
+- The project connects AI-agent risk to defensive detection and monitoring concepts.
+- The repository is intentionally local, deterministic, and public-safe.
+
+
 ## Current Status
 
 ```text
 Phase 1: Complete - static prompt-injection fixture analyzer
 Phase 2: Complete - deterministic toy wallet-agent behavior simulator
 Phase 3: Complete - deterministic wallet-agent fixture evaluation
+Phase 4: Complete - threat framework and detection mapping
 ```
 
 ## Research Focus
@@ -151,6 +178,28 @@ wallet_action_allowed = false
 ```
 
 
+## Phase 4 Proof Map
+
+Phase 4 added threat-framework and detection mapping for wallet-agent safety behavior.
+
+### Phase 4 Research Question
+
+How can wallet-agent prompt-injection and unsafe tool-use risks be mapped to public AI security frameworks and practical detection ideas?
+
+### Phase 4 Artifacts
+
+- [Threat framework and detection mapping](docs/lab-notes/threat-framework-detection-mapping-001.md)
+- [Lab notes index](docs/lab-notes/README.md)
+- [Project roadmap](docs/ROADMAP.md)
+
+### Phase 4 Validated Value
+
+- Maps wallet-agent risk to OWASP LLM Top 10 concepts.
+- Maps agent behavior patterns to MITRE ATLAS-style security reasoning.
+- Defines detection and monitoring ideas for unsafe agent behavior.
+- Connects the project to employer-relevant AI security, AppSec, detection engineering, and product-security discussions.
+
+
 ## Run Validation Tests
 
 Run the full current test set:
@@ -214,6 +263,3 @@ Current results apply only to controlled local fixtures and deterministic toy si
 This repository is for controlled security research, defensive validation, and portfolio-grade documentation.
 
 It is not a tool for unauthorized testing, real-wallet exploitation, transaction manipulation, credential theft, persistence, evasion, or harm.
-
-
-
