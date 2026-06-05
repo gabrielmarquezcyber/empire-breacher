@@ -92,8 +92,8 @@ Can hostile, benign, and ambiguous wallet-agent external content be classified c
 | [`tests/fixtures/agent_wallet_injection_001.txt`](tests/fixtures/agent_wallet_injection_001.txt) | Malicious wallet-agent prompt-injection fixture. |
 | [`tests/fixtures/agent_wallet_ambiguous_001.txt`](tests/fixtures/agent_wallet_ambiguous_001.txt) | Ambiguous wallet-related fixture requiring review. |
 | [`tests/fixtures/agent_wallet_benign_001.txt`](tests/fixtures/agent_wallet_benign_001.txt) | Benign wallet-safety fixture. |
-| `tests/test_prompt_injection_tester.py` | Regression tests for analyzer classifications. |
-| `results/prompt-injection/` | Generated analyzer result reports. |
+| [`tests/test_prompt_injection_tester.py`](tests/test_prompt_injection_tester.py) | Regression tests for analyzer classifications. |
+| [`results/prompt-injection/`](results/prompt-injection/) | Generated analyzer result reports. |
 | [`docs/lab-notes/prompt-injection-analyzer-validation-summary-001.md`](docs/lab-notes/prompt-injection-analyzer-validation-summary-001.md) | Phase 1 validation summary. |
 
 ### Phase 1 Validated Behavior
